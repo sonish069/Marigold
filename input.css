@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+
+
+
+p{
+    @apply leading-9
+}
+
+.nav-link{
+    @apply border-b-4 border-transparent px-3 hover:text-blue hover:border-b-4 hover:border-yellow transition duration-300
+}
+
+.nav-link-sm{
+    @apply border-b-4 border-transparent px-3 hover:text-blue hover:border-b-4 hover:border-VerydarkBlue transition duration-300
+}
+
+.w-500{
+    width: 700px;
+}
+
+.border-b-1 {
+    border-bottom-width: 0.5px;
+}
+
+.btn{
+    @apply py-3 px-8 font-medium rounded-full transition duration-300
+}
+
+.btn-yellow{
+    @apply text-VerydarkBlue bg-yellow hover:bg-darkYellow
+}
+
+.btn-light-blue{
+    @apply text-VerydarkBlue bg-lightBlue hover:bg-darkBlue hover:text-white
+}
+
+.btn-blue{
+    @apply text-white bg-darkBlue hover:bg-blue
+}
+
+.tick{
+    @apply w-7 h-7 mr-3 flex-shrink-0
+}
