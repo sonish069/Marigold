@@ -5,12 +5,16 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-
-
-
+.font-bold{
+    text-wrap: balance;
+}
 
 p{
     @apply leading-9
+}
+
+.wrap-balance{
+    text-wrap: balance;
 }
 
 .nav-link{
@@ -48,3 +52,4 @@ p{
 .tick{
     @apply w-7 h-7 mr-3 flex-shrink-0
 }
+
