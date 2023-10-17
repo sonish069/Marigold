@@ -33,6 +33,12 @@ p{
     border-bottom-width: 0.5px;
 }
 
+.masonry{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: masonry;
+}
+
 .btn{
     @apply py-3 px-8 font-medium rounded-full transition duration-300
 }
