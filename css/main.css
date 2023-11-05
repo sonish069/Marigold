@@ -676,6 +676,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -719,6 +723,7 @@ video {
 .max-h-16 {
   max-height: 4rem;
 }
+
 
 .w-4 {
   width: 1rem;
@@ -869,6 +874,7 @@ video {
   border-width: 2px;
 }
 
+
 .border-lightBlue {
   --tw-border-opacity: 1;
   border-color: rgb(210 198 250 / var(--tw-border-opacity));
@@ -899,6 +905,11 @@ video {
   background-color: rgb(254 243 218 / var(--tw-bg-opacity));
 }
 
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 96 181 / var(--tw-bg-opacity));
+}
+
 .bg-darkBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(73 71 159 / var(--tw-bg-opacity));
@@ -924,10 +935,6 @@ video {
   background-color: rgb(254 205 211 / var(--tw-bg-opacity));
 }
 
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(98 96 181 / var(--tw-bg-opacity));
-}
 
 .bg-yellow {
   --tw-bg-opacity: 1;
@@ -978,12 +985,7 @@ video {
   padding: 1.25rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
 
-.p-8 {
-  padding: 2rem;
 }
 
 .px-10 {
@@ -1164,7 +1166,11 @@ video {
   transition-duration: 150ms;
 }
 
-.font-bold{
+  .text-balance {
+    text-wrap:balance;
+  }
+  
+ .font-bold{
   text-wrap: balance;
 }
 
@@ -1172,7 +1178,7 @@ p {
   line-height: 2.25rem;
 }
 
-.wrap-balance{
+.wrap-balance {
   text-wrap: balance;
 }
 
@@ -1216,7 +1222,7 @@ p {
   color: rgb(98 96 181 / var(--tw-text-opacity));
 }
 
-.w-500{
+.w-500 {
   width: 700px;
 }
 
@@ -1224,7 +1230,7 @@ p {
   border-bottom-width: 0.5px;
 }
 
-.masonry{
+.masonry {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: masonry;
@@ -1289,6 +1295,7 @@ p {
   flex-shrink: 0;
 }
 
+
 .hover\:bg-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(98 96 181 / var(--tw-bg-opacity));
@@ -1299,9 +1306,6 @@ p {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-red-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1353,6 +1357,18 @@ p {
 
   .md\:p-14 {
     padding: 3.5rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-20 {
@@ -1462,6 +1478,30 @@ p {
     padding: 4rem;
   }
 
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+
+  .lg\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .lg\:p-1 {
+    padding: 0.25rem;
+  }
+
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1471,6 +1511,7 @@ p {
     padding-left: 10rem;
     padding-right: 10rem;
   }
+
 
   .lg\:px-14 {
     padding-left: 3.5rem;
@@ -1514,4 +1555,3 @@ p {
     line-height: 1.25;
   }
 }
-
