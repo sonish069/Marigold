@@ -844,6 +844,10 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-lightBlue {
   --tw-border-opacity: 1;
   border-color: rgb(210 198 250 / var(--tw-border-opacity));
@@ -926,16 +930,16 @@ video {
   padding: 2.5rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-10 {
@@ -1248,10 +1252,6 @@ p {
 
   .md\:self-center {
     align-self: center;
-  }
-
-  .md\:p-8 {
-    padding: 2rem;
   }
 
   .md\:p-14 {
