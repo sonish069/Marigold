@@ -1,630 +1,1041 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marigold Consultancy</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-</head>
-<body class="text-lg font-Poppins text-fontColor">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-lg font-Poppins text-fontColor">
     <!-- Navbar -->
     <header class="bg-bg2" id="top">
-    <nav class="container relative ">
+      <nav class="container relative">
+        <div class="hidden lg:block">
+          <div
+            class="flex items-center justify-between gap-20 pt-6 pb-3 border-b-1 border-lightBlue"
+          >
+            <!-- Logo -->
+            <div class="pt-2">
+              <img src="img/logo.png" class="h-12 md:h-16" alt="Logo" />
+            </div>
 
-    <div class="hidden lg:block">
-    <div class="flex items-center justify-between gap-20 pt-6 pb-3 border-b-1 border-lightBlue">
-        <!-- Logo -->
-        <div class="pt-2">
-            <img src="img/logo.png" class="h-12 md:h-16" alt="Logo" />
-        </div>
-        
             <ul class="justify-end flex-1 hidden gap-10 lg:flex">
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-location-dot bg-iconYellow rounded-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold">Address</h5>
+                  <p class="text-sm">Kamalbinayak, Bhaktapur</p>
+                </div>
+              </li>
 
-                <li class="flex flex-row items-center gap-4">
-                    <div id="icon" class="">
-                        <i class="p-3 text-2xl fa-solid fa-location-dot bg-iconYellow rounded-2xl"></i>
-                    </div>
-                    <div>
-                            <h5 class="text-base font-semibold ">Address</h5>
-                            <p class="text-sm">Kamalbinayak, Bhaktapur</p>
-                    </div>
-                </li>
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-envelope bg-lightBlue rounded-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold">email</h5>
+                  <a href="mailto:bkt.marigold@gmail.com">
+                    <p class="text-sm">bkt.marigold@gmail.com</p>
+                  </a>
+                </div>
+              </li>
 
-                <li class="flex flex-row items-center gap-4">
-                    <div id="icon" class="">
-                        <i class="p-3 text-2xl fa-solid fa-envelope bg-lightBlue rounded-2xl"></i>
-                    </div>
-                    <div>
-                            <h5 class="text-base font-semibold ">email</h5>
-                            <a href="mailto:bkt.marigold@gmail.com">
-                                <p class="text-sm">bkt.marigold@gmail.com</p>
-                            </a>
-                    </div>
-                </li>
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-phone bg-pink rounded-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold">Phone</h5>
+                  <a href="tel:+9779869253061">
+                    <p class="text-sm">+977 9869253061</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                <li class="flex flex-row items-center gap-4">
-                    <div id="icon" class="">
-                        <i class="p-3 text-2xl fa-solid fa-phone bg-pink rounded-2xl"></i>
-                    </div>
-                    <div>
-                            <h5 class="text-base font-semibold ">Phone</h5>
-                            <a href="tel:+9779869253061">
-                                <p class="text-sm">+977 9869253061</p>
-                            </a>
-                    </div>
-                </li>
-
-            </ul>          
-    
-
-    </div>    
-
-    <!-- Lower nav -->
-    <div class="items-center justify-between hidden pt-5 lg:flex">
-        
-        <!-- Menu Items -->
-        <ul class="flex flex-1 gap-8 font-medium text-verydarkBlue">
-            <li class="cursor-pointer">
+          <!-- Lower nav -->
+          <div class="items-center justify-between hidden pt-5 lg:flex">
+            <!-- Menu Items -->
+            <ul class="flex flex-1 gap-8 font-medium text-verydarkBlue">
+              <li class="cursor-pointer">
                 <a href="#top" class="nav-link">Home</a>
-            </li>
-            <li class="cursor-pointer">
+              </li>
+              <li class="cursor-pointer">
                 <a href="#program" class="nav-link">Programs</a>
-            </li>
-            <li class="cursor-pointer">
+              </li>
+              <li class="cursor-pointer">
                 <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="cursor-pointer">
+              </li>
+              <li class="cursor-pointer">
                 <a href="#services" class="nav-link">Services</a>
-            </li>
-            
-        </ul>
+              </li>
+            </ul>
 
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfesIkCH1Bsdw_dEpjELucrmck8M-W-cLJQyXeJnOHUHGFfmw/viewform" target="_blank" class="hidden btn btn-yellow md:block ">Apply Now</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfesIkCH1Bsdw_dEpjELucrmck8M-W-cLJQyXeJnOHUHGFfmw/viewform"
+              target="_blank"
+              class="hidden btn btn-yellow md:block"
+              >Apply Now</a
+            >
+          </div>
+        </div>
 
-  
-
-    </div>
-    </div>
-
-    <div class="flex items-center justify-between pt-6 pb-3 lg:hidden border-b-1 border-lightBlue">
-        <!-- Logo -->
-        <div class="pt-2">
+        <div
+          class="flex items-center justify-between pt-6 pb-3 lg:hidden border-b-1 border-lightBlue"
+        >
+          <!-- Logo -->
+          <div class="pt-2">
             <img src="img/logo.png" class="h-12 md:h-16" alt="Logo" />
+          </div>
+
+          <!-- Hamburger Icon -->
+          <button class="block hamburger focus:outline-none">
+            <i
+              id="menu-btn"
+              class="text-3xl transition-all fa-solid fa-bars"
+            ></i>
+          </button>
         </div>
 
-         <!-- Hamburger Icon -->
-         <button class="block hamburger focus:outline-none">
-            <i id="menu-btn" class="text-3xl transition-all fa-solid fa-bars"></i>
-        </button>
-    </div>
-
-
-      <!-- Mobile menu -->
-      <div class="lg:hidden">
-        <div id="menu" class="absolute z-10 flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-gradient-to-br from-iconYellow to-veryLightBlue md:w-auto md:self-center left-6 right-6 drop-shadow-lg">
-                <a href="#top" class="nav-link-sm">Home</a>
-                <a href="#program" class="nav-link-sm">Programs</a>
-                <a href="#about" class="nav-link-sm">About</a>
-                <a href="#services" class="nav-link-sm">Services</a>
-                <a href="#contact" class="nav-link-sm">Contact</a>
+        <!-- Mobile menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute z-10 flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-gradient-to-br from-iconYellow to-veryLightBlue md:w-auto md:self-center left-6 right-6 drop-shadow-lg"
+          >
+            <a href="#top" class="nav-link-sm">Home</a>
+            <a href="#program" class="nav-link-sm">Programs</a>
+            <a href="#about" class="nav-link-sm">About</a>
+            <a href="#services" class="nav-link-sm">Services</a>
+            <a href="#contact" class="nav-link-sm">Contact</a>
+          </div>
         </div>
-    </div>
-    
-    </nav>
+      </nav>
     </header>
-
-
 
     <!-- Hero Section -->
     <section id="hero" class="relative bg-bg2">
-        <div class="container flex flex-col-reverse items-center lg:flex-row">
-
-            <!-- Hero Contents -->
-            <div class="z-10 flex flex-col items-center flex-1 gap-5 mt-10 mb-10 lg:items-start lg:mb-10 lg:mt-24">
-                <div class="inline-flex px-5 py-3 rounded-full shadow-lg bg-lightBlue -rotate-2">
-                    <span class="text-sm font-medium">Welcome to Marigold Consultancy</span>
-                </div>
-                <h1 class="text-4xl font-bold text-center lg:text-6xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Expanding access to international career pathways
-                </h1>
-                <p class="py-2 text-center lg:text-left">
-                    Welcome to <b>Marigold Abroad Training and Consultancy</b>, a leading organization dedicated to providing top-notch abroad training and consultancy services to individuals seeking to pursue their careers abroad.
-                </p>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <a href="#about" class="btn btn-yellow">Know More</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfesIkCH1Bsdw_dEpjELucrmck8M-W-cLJQyXeJnOHUHGFfmw/viewform#" target="_blank" class="btn btn-light-blue">Apply Now</a>
-                </div>
-            </div>
-
-            <!-- Hero Image -->
-            <div class="flex justify-center flex-1 mt-10 mb-10 md:mb-16 lg:mb-0 lg:mt-0 lg:z-10">
-                <img src="img/hero.webp" alt="Hero Image" />
-            </div>
-            
+      <div class="container flex flex-col-reverse items-center lg:flex-row">
+        <!-- Hero Contents -->
+        <div
+          class="z-10 flex flex-col items-center flex-1 gap-5 mt-10 mb-10 lg:items-start lg:mb-10 lg:mt-24"
+        >
+          <div
+            class="inline-flex px-5 py-3 rounded-full shadow-lg bg-lightBlue -rotate-2"
+          >
+            <span class="text-sm font-medium"
+              >Welcome to Marigold Consultancy</span
+            >
+          </div>
+          <h1
+            class="text-4xl font-bold text-center lg:text-6xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Expanding access to international career pathways
+          </h1>
+          <p class="py-2 text-center lg:text-left">
+            Welcome to <b>Marigold Abroad Training and Consultancy</b>, a
+            leading organization dedicated to providing top-notch abroad
+            training and consultancy services to individuals seeking to pursue
+            their careers abroad.
+          </p>
+          <div class="flex flex-wrap justify-center gap-6">
+            <a href="#about" class="btn btn-yellow">Know More</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfesIkCH1Bsdw_dEpjELucrmck8M-W-cLJQyXeJnOHUHGFfmw/viewform#"
+              target="_blank"
+              class="btn btn-light-blue"
+              >Apply Now</a
+            >
+          </div>
         </div>
 
-        <!-- Background Image -->
-        <div class="absolute bottom-0 right-0 hidden overflow-hidden lg:block">
-            <img src="img/herobg.png" alt="bg image" class="translate-x-48 w-500 opacity-30">
+        <!-- Hero Image -->
+        <div
+          class="flex justify-center flex-1 mt-10 mb-10 md:mb-16 lg:mb-0 lg:mt-0 lg:z-10"
+        >
+          <img src="img/hero.webp" alt="Hero Image" />
         </div>
+      </div>
 
-        <div class="h-20 bg-gradient-to-b from-bg2 to-bg3"></div>
+      <!-- Background Image -->
+      <div class="absolute bottom-0 right-0 hidden overflow-hidden lg:block">
+        <img
+          src="img/herobg.png"
+          alt="bg image"
+          class="translate-x-48 w-500 opacity-30"
+        />
+      </div>
 
+      <div class="h-20 bg-gradient-to-b from-bg2 to-bg3"></div>
     </section>
-    
+
     <!-- Main Body -->
     <section class="relative bg-bg3" id="program">
+      <div
+        class="container flex flex-col justify-center max-w-screen-xl gap-5 py-10 px- 5 md:px-20 lg:px-40"
+      >
+        <!-- Features -->
+        <h2
+          class="text-3xl font-bold text-center lg:text-4xl lg:leading-tight text-verydarkBlue"
+        >
+          Providing the best possible start to your career abroad
+        </h2>
+        <p class="z-10 text-center">
+          Our mission is to empower individuals with the knowledge, skills, and
+          tools they need to succeed in a globalized world. We understand that
+          the path to success can be challenging, particularly for those who
+          wish to pursue their careers abroad.
+        </p>
 
-        <div class="container flex flex-col justify-center max-w-screen-xl gap-5 py-10 px- 5 md:px-20 lg:px-40">
-            <!-- Features -->
-            <h2 class="text-3xl font-bold text-center lg:text-4xl lg:leading-tight text-verydarkBlue">
-                Providing the best possible start to your career abroad
-            </h2>
-            <p class="z-10 text-center">
-                Our mission is to empower individuals with the knowledge, skills, and tools they need to succeed in a globalized world. We understand that the path to success can be challenging, particularly for those who wish to pursue their careers abroad. 
-            </p>
+        <div id="list">
+          <ul class="flex flex-wrap justify-center text-center">
+            <li class="flex items-center mx-3 my-2" lg:mr-6>
+              <img src="img/tick.svg" class="tick" />
+              <span> Personalized Services </span>
+            </li>
 
-            <div id="list">
-                <ul class="flex flex-wrap justify-center text-center">
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Experienced Professionals </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2"lg:mr-6>
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Personalized Services
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Comprehensive Support </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Experienced Professionals
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Commitment to Excellence </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Comprehensive Support
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Reliable Overseas Partners </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Commitment to Excellence
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Post Depature Supports </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Reliable Overseas Partners
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> Network of International Partners </span>
+            </li>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Post Depature Supports
-                        </span>
-                    </li>
+            <li class="flex items-center mx-3 my-2 lg:mr-6">
+              <img src="img/tick.svg" class="tick" />
+              <span> In-House lawyer Support </span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            Network of International Partners
-                        </span>
-                    </li>
+      <!-- Programs Offered -->
 
-                    <li class="flex items-center mx-3 my-2 lg:mr-6">
-                        <img src="img/tick.svg" class="tick" />
-                        <span>
-                            In-House lawyer Support
-                        </span>
-                    </li>
-
-                </ul>
-            </div>
-
+      <!-- Study Abroad -->
+      <div
+        class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20"
+      >
+        <div class="items-center mb-20 lg:items-start">
+          <img src="img/study.jpg" class="shadow-lg rounded-3xl" />
         </div>
 
-        <!-- Programs Offered -->
+        <div
+          class="flex flex-col items-center gap-5 mb-20 lg:items-start lg:col-span-2"
+        >
+          <div
+            class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium"
+              >Getting Educational Qualification</span
+            >
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Study Abroad
+          </h1>
+          <p class="text-center lg:text-left">
+            Unlock the world of international education with our Study Abroad
+            program. Explore opportunities to study in Canada, Australia, the
+            UK, Finland, New Zealand, and more. We provide a seamless path to
+            academic excellence and cultural immersion. Gain a global
+            perspective, meet diverse minds, and develop skills that transcend
+            borders. Your journey to academic success begins here.
+          </p>
+          <p class="text-center lg:text-left">
+            We are committed to making your study abroad experience as seamless
+            as possible, so you can focus on what truly matters: the pursuit of
+            knowledge and the exploration of the world. Join us and embark on an
+            unforgettable journey that will shape your future in ways you can't
+            yet imagine."
+          </p>
+        </div>
+      </div>
 
-        <!-- Study Abroad -->
-        <div class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20">
-            <div class="items-center mb-20 lg:items-start">
-                <img src="img/study.jpg" class="shadow-lg rounded-3xl"/>
-            </div>
-
-            <div class="flex flex-col items-center gap-5 mb-20 lg:items-start lg:col-span-2">
-                <div class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                    <span class="text-sm font-medium">Getting Educational Qualification</span>
-                </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Study Abroad
-                </h1>
-                <p class="text-center lg:text-left">
-                    Unlock the world of international education with our Study Abroad program. Explore opportunities to study in Canada, Australia, the UK, Finland, New Zealand, and more. We provide a seamless path to academic excellence and cultural immersion. Gain a global perspective, meet diverse minds, and develop skills that transcend borders. Your journey to academic success begins here.
-                </p>
-                <p class="text-center lg:text-left">
-                    We are committed to making your study abroad experience as seamless as possible, so you can focus on what truly matters: the pursuit of knowledge and the exploration of the world. Join us and embark on an unforgettable journey that will shape your future in ways you can't yet imagine."
-                </p>
-            </div>
-
+      <!-- Train and Place -->
+      <div
+        class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20"
+      >
+        <div class="items-center order-1 mb-20 lg:items-start lg:order-2">
+          <img src="img/train.jpg" class="shadow-lg rounded-3xl" />
         </div>
 
+        <div
+          class="flex flex-col items-center order-2 gap-5 mb-20 lg:items-start lg:col-span-2 lg:order-1"
+        >
+          <div
+            class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium">Developing Skills</span>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Train and Place
+          </h1>
+          <p class="text-center lg:text-left">
+            Welcome to our Train and Place program, a transformative path to
+            jumpstart your career. With a focus on skill development and job
+            placement, this program equips you with the expertise and practical
+            experience required in today's competitive job market. We provide
+            intensive training, mentoring, and real-world exposure to prepare
+            you for success. Whether you're a recent graduate or looking to
+            switch careers, our program is your launchpad to a rewarding and
+            fulfilling professional journey.
+          </p>
+          <p class="text-center lg:text-left">
+            At the heart of our Train and Place program is a commitment to your
+            future. We understand the challenges of entering the workforce or
+            shifting career paths, and we're here to provide the support you
+            need. Our dedicated team works closely with you to identify your
+            strengths, passions, and career goals. We then tailor a training
+            plan that not only hones your skills but also ensures you're
+            job-ready. Beyond training, we facilitate job placement, helping you
+            secure positions in your chosen field. Your success is our mission,
+            and we're ready to embark on this transformative journey with you.
+          </p>
+        </div>
+      </div>
 
-         <!-- Train and Place -->
-         <div class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20">
-            <div class="items-center order-1 mb-20 lg:items-start lg:order-2">
-                <img src="img/train.jpg" class="shadow-lg rounded-3xl"/>
-            </div>
-
-            <div class="flex flex-col items-center order-2 gap-5 mb-20 lg:items-start lg:col-span-2 lg:order-1">
-                <div class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                    <span class="text-sm font-medium">Developing Skills</span>
-                </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Train and Place
-                </h1>
-                <p class="text-center lg:text-left">
-                    Welcome to our Train and Place program, a transformative path to jumpstart your career. With a focus on skill development and job placement, this program equips you with the expertise and practical experience required in today's competitive job market. We provide intensive training, mentoring, and real-world exposure to prepare you for success. Whether you're a recent graduate or looking to switch careers, our program is your launchpad to a rewarding and fulfilling professional journey.
-                </p>
-                <p class="text-center lg:text-left">
-                    At the heart of our Train and Place program is a commitment to your future. We understand the challenges of entering the workforce or shifting career paths, and we're here to provide the support you need. Our dedicated team works closely with you to identify your strengths, passions, and career goals. We then tailor a training plan that not only hones your skills but also ensures you're job-ready. Beyond training, we facilitate job placement, helping you secure positions in your chosen field. Your success is our mission, and we're ready to embark on this transformative journey with you.
-                </p>
-            </div>
-
+      <!-- Internship Programs -->
+      <div
+        class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20"
+      >
+        <div class="items-center mb-20 lg:items-start">
+          <img src="img/intern.jpg" class="shadow-lg rounded-3xl" />
         </div>
 
-            <!-- Internship Programs -->
-            <div class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20">
-                <div class="items-center mb-20 lg:items-start">
-                    <img src="img/intern.jpg" class="shadow-lg rounded-3xl"/>
-                </div>
-    
-                <div class="flex flex-col items-center gap-5 mb-20 lg:items-start lg:col-span-2">
-                    <div class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                        <span class="text-sm font-medium">Learn and Earn</span>
-                    </div>
-                    <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                        Internship Programs
-                    </h1>
-                    <p class="text-center lg:text-left">
-                        Our Internship Program is your gateway to real-world experience, professional growth, and the chance to apply classroom knowledge to practical challenges. Designed to bridge the gap between education and the professional world, our program offers you the opportunity to work with industry experts, gain valuable insights into your field, and develop essential skills that will set you apart in your future career.
-                    </p>
-                    <p class="text-center lg:text-left">
-                        With a focus on hands-on learning, our Internship Program is the perfect platform to explore your passion, expand your horizons, and build a strong foundation for your professional journey. Whether you're a student looking to kickstart your career or a professional seeking a new direction, we provide a range of diverse opportunities to suit your aspirations. Our dedicated team is committed to helping you succeed, guiding you through your internship, and ensuring you gain the knowledge and experience that will shape your future success. Join us and embark on a transformative journey that will open doors to endless possibilities.
-                    </p>
-                </div>
-    
-            </div>
-    
-    
-             <!-- Work Experience -->
-             <div class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20">
-                <div class="items-center order-1 mb-20 lg:items-start lg:order-2">
-                    <img src="img/work.jpg" class="shadow-lg rounded-3xl"/>
-                </div>
-    
-                <div class="flex flex-col items-center order-2 gap-5 mb-20 lg:items-start lg:col-span-2 lg:order-1">
-                    <div class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                        <span class="text-sm font-medium">Getting Head Start</span>
-                    </div>
-                    <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                        Work Experience
-                    </h1>
-                    <p class="text-center lg:text-left">
-                        Our Work Experience program is carefully crafted to provide individuals with valuable opportunities to gain real-world exposure and enhance their professional skills. Whether you're a student looking to complement your academic knowledge or a professional seeking a career change, our program offers a pathway to hands-on learning.
-                    </p>
-                    <p class="text-center lg:text-left">
-                        You'll have the chance to work alongside industry experts, tackle challenges, and build a solid foundation for your future career. With our program, you'll develop practical skills, expand your network, and gain insights that go beyond textbooks. We are committed to guiding you through this enriching experience, ensuring that you emerge with the confidence and capabilities to excel in your chosen field. Join us and embark on a journey that will not only enhance your résumé but also enrich your career prospects.
-                    </p>
-                </div>
-    
-            </div>
+        <div
+          class="flex flex-col items-center gap-5 mb-20 lg:items-start lg:col-span-2"
+        >
+          <div
+            class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium">Learn and Earn</span>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Internship Programs
+          </h1>
+          <p class="text-center lg:text-left">
+            Our Internship Program is your gateway to real-world experience,
+            professional growth, and the chance to apply classroom knowledge to
+            practical challenges. Designed to bridge the gap between education
+            and the professional world, our program offers you the opportunity
+            to work with industry experts, gain valuable insights into your
+            field, and develop essential skills that will set you apart in your
+            future career.
+          </p>
+          <p class="text-center lg:text-left">
+            With a focus on hands-on learning, our Internship Program is the
+            perfect platform to explore your passion, expand your horizons, and
+            build a strong foundation for your professional journey. Whether
+            you're a student looking to kickstart your career or a professional
+            seeking a new direction, we provide a range of diverse opportunities
+            to suit your aspirations. Our dedicated team is committed to helping
+            you succeed, guiding you through your internship, and ensuring you
+            gain the knowledge and experience that will shape your future
+            success. Join us and embark on a transformative journey that will
+            open doors to endless possibilities.
+          </p>
+        </div>
+      </div>
 
+      <!-- Work Experience -->
+      <div
+        class="container items-center py-10 lg:grid lg:grid-cols-3 lg:gap-20"
+      >
+        <div class="items-center order-1 mb-20 lg:items-start lg:order-2">
+          <img src="img/work.jpg" class="shadow-lg rounded-3xl" />
+        </div>
+
+        <div
+          class="flex flex-col items-center order-2 gap-5 mb-20 lg:items-start lg:col-span-2 lg:order-1"
+        >
+          <div
+            class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium">Getting Head Start</span>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Work Experience
+          </h1>
+          <p class="text-center lg:text-left">
+            Our Work Experience program is carefully crafted to provide
+            individuals with valuable opportunities to gain real-world exposure
+            and enhance their professional skills. Whether you're a student
+            looking to complement your academic knowledge or a professional
+            seeking a career change, our program offers a pathway to hands-on
+            learning.
+          </p>
+          <p class="text-center lg:text-left">
+            You'll have the chance to work alongside industry experts, tackle
+            challenges, and build a solid foundation for your future career.
+            With our program, you'll develop practical skills, expand your
+            network, and gain insights that go beyond textbooks. We are
+            committed to guiding you through this enriching experience, ensuring
+            that you emerge with the confidence and capabilities to excel in
+            your chosen field. Join us and embark on a journey that will not
+            only enhance your résumé but also enrich your career prospects.
+          </p>
+        </div>
+      </div>
     </section>
-
-
 
     <!-- About Section -->
 
     <section id="about" class="py-20 bg-bg1">
-
-        <div class="container items-center gap-10 lg:grid lg:grid-cols-3">
-            <div class="flex flex-col items-center gap-10 mb-20 lg:items-start">
-                <img src="img/about.jpg" class="rounded-3xl">
-                <img src="img/about2.jpg" class="hidden rounded-3xl lg:flex">
-            </div>            
-                
-            <div class="flex flex-col items-center gap-4 lg:items-start lg:col-span-2 lg:pl-10">
-                <div class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                    <span class="text-sm font-medium">About Us</span>
-                </div>
-                <h1 class="text-4xl font-bold text-center lg:text-5xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    How can we help you
-                </h1>
-                <p class="text-center lg:text-left">
-                    Welcome to <b>Marigold Abroad Training and Consultancy</b>, a leading organization dedicated to providing top-notch training and consultancy services to individuals seeking to pursue their careers abroad.
-                </p>
-                <p class="text-center lg:text-left">
-                    Our mission is to empower individuals with the knowledge, skills, and tools they need to succeed in a globalized world. We understand that the path to success can be challenging, particularly for those who wish to pursue their careers abroad. 
-                </p>
-                <p class="text-center lg:text-left">
-                    Our team of experts includes seasoned professionals with extensive experience in international education, career counseling, and visa assistance. They are well-versed in the latest trends and developments in the industry, and use their expertise to guide our clients through every step of the process.
-
-                    At Marigold Abroad Training and Consultancy, we pride ourselves on our commitment to excellence, integrity, and professionalism. We are dedicated to providing our clients with the highest level of service and support, and helping them achieve their goals.
-                </p>
-
-                    <div class="relative p-5 pt-16 mt-8 text-left shadow-xl bg-lightYellow lg:p-16 rounded-3xl">
-
-                        <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-
-                        That is why we are committed to providing our clients:
-                        <div id="list">
-                            <ul class="flex flex-col lg:justify-center">
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Comprehensive training and consultancy services for individuals seeking to pursue their careers abroad.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-8 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Personalized services tailored to meet the unique needs and preferences of our clients.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Experienced team of professionals with extensive knowledge of international education, career counseling, and visa assistance.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Commitment to excellence, integrity, and professionalism.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Trusted and reliable provider of overseas training and consultancy services with over a decade of experience in the industry.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        Dedicated to empowering individuals with the knowledge, skills, and tools they need to succeed in a globalized world.
-                                    </span>
-                                </li>
-            
-                                <li class="flex mx-3 my-2 lg:items-center">
-                                    <img src="img/tick.svg" class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3" />
-                                    <span>
-                                        and more..........
-                                    </span>
-                                </li>                       
-                            </ul>
-                        </div>
-                    </div>
-
-            </div> 
+      <div class="container items-center gap-10 lg:grid lg:grid-cols-3">
+        <div class="flex flex-col items-center gap-10 mb-20 lg:items-start">
+          <img src="img/about.jpg" class="rounded-3xl" />
+          <img src="img/about2.jpg" class="hidden rounded-3xl lg:flex" />
         </div>
 
-        <p class="container px-10 py-10 text-center wrap-balance lg:px-24">
-            At <b>Marigold Abroad Training and Consultancy</b>, we believe that every individual has the potential to achieve their dreams and make a difference in the world. We are honored to be a part of our clients' journey towards success and are committed to providing them with the best possible support and guidance along the way. If you are looking to pursue your career abroad, we invite you to connect with us today and explore how we can help you achieve your goals. Thank you for considering Marigold Abroad Training and Consultancy, and we look forward to hearing from you soon.
-        </p>
+        <div
+          class="flex flex-col items-center gap-4 lg:items-start lg:col-span-2 lg:pl-10"
+        >
+          <div
+            class="inline-flex px-5 py-3 mb-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium">About Us</span>
+          </div>
+          <h1
+            class="text-4xl font-bold text-center lg:text-5xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            How can we help you
+          </h1>
+          <p class="text-center lg:text-left">
+            Welcome to <b>Marigold Abroad Training and Consultancy</b>, a
+            leading organization dedicated to providing top-notch training and
+            consultancy services to individuals seeking to pursue their careers
+            abroad.
+          </p>
+          <p class="text-center lg:text-left">
+            Our mission is to empower individuals with the knowledge, skills,
+            and tools they need to succeed in a globalized world. We understand
+            that the path to success can be challenging, particularly for those
+            who wish to pursue their careers abroad.
+          </p>
+          <p class="text-center lg:text-left">
+            Our team of experts includes seasoned professionals with extensive
+            experience in international education, career counseling, and visa
+            assistance. They are well-versed in the latest trends and
+            developments in the industry, and use their expertise to guide our
+            clients through every step of the process. At Marigold Abroad
+            Training and Consultancy, we pride ourselves on our commitment to
+            excellence, integrity, and professionalism. We are dedicated to
+            providing our clients with the highest level of service and support,
+            and helping them achieve their goals.
+          </p>
 
+          <div
+            class="relative p-5 pt-16 mt-8 text-left shadow-xl bg-lightYellow lg:p-16 rounded-3xl"
+          >
+            <div
+              class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+            >
+              <i class="fa-solid fa-award"></i>
+            </div>
+
+            That is why we are committed to providing our clients:
+            <div id="list">
+              <ul class="flex flex-col lg:justify-center">
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Comprehensive training and consultancy services for
+                    individuals seeking to pursue their careers abroad.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-8 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Personalized services tailored to meet the unique needs and
+                    preferences of our clients.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Experienced team of professionals with extensive knowledge
+                    of international education, career counseling, and visa
+                    assistance.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Commitment to excellence, integrity, and professionalism.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Trusted and reliable provider of overseas training and
+                    consultancy services with over a decade of experience in the
+                    industry.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span>
+                    Dedicated to empowering individuals with the knowledge,
+                    skills, and tools they need to succeed in a globalized
+                    world.
+                  </span>
+                </li>
+
+                <li class="flex mx-3 my-2 lg:items-center">
+                  <img
+                    src="img/tick.svg"
+                    class="flex-shrink-0 w-4 h-4 mr-2 lg:w-7 lg:h-7 lgLmr-3"
+                  />
+                  <span> and more.......... </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="container px-10 py-10 text-center wrap-balance lg:px-24">
+        At <b>Marigold Abroad Training and Consultancy</b>, we believe that
+        every individual has the potential to achieve their dreams and make a
+        difference in the world. We are honored to be a part of our clients'
+        journey towards success and are committed to providing them with the
+        best possible support and guidance along the way. If you are looking to
+        pursue your career abroad, we invite you to connect with us today and
+        explore how we can help you achieve your goals. Thank you for
+        considering Marigold Abroad Training and Consultancy, and we look
+        forward to hearing from you soon.
+      </p>
     </section>
-
-
 
     <!-- Service section -->
     <section id="services" class="py-20">
-        <div class="container items-center gap-10 lg:grid lg:grid-cols-2">
-            
-            <div class="flex flex-col items-center gap-4 mb-8 lg:col-span-2 lg:pl-10">
+      <div class="container items-center gap-10 lg:grid lg:grid-cols-2">
+        <div
+          class="flex flex-col items-center gap-4 mb-8 lg:col-span-2 lg:pl-10"
+        >
+          <div
+            class="inline-flex px-5 py-3 rounded-full shadow-lg bg-lightBlue -rotate-1"
+          >
+            <span class="text-sm font-medium">About Us</span>
+          </div>
 
-                <div class="inline-flex px-5 py-3 rounded-full shadow-lg bg-lightBlue -rotate-1">
-                    <span class="text-sm font-medium">About Us</span>
-                </div>
-           
-            <h1 class="text-4xl font-bold text-center lg:text-5xl text-verydarkBlue">
-                Our Services
-            </h1>
+          <h1
+            class="text-4xl font-bold text-center lg:text-5xl text-verydarkBlue"
+          >
+            Our Services
+          </h1>
 
-            <p class="text-center">
-                Our services are designed to provide comprehensive support to individuals seeking to pursue their careers abroad. We offer a range of training and consultancy services, as well as practical assistance with visa processing, documentations, and accommodation. Our services include:
-            </p>
-
+          <p class="text-center">
+            Our services are designed to provide comprehensive support to
+            individuals seeking to pursue their careers abroad. We offer a range
+            of training and consultancy services, as well as practical
+            assistance with visa processing, documentations, and accommodation.
+            Our services include:
+          </p>
         </div>
 
-            
-            <div class="relative flex flex-col items-center col-span-2 gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg1">
-                <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                    <i class="fa-solid fa-diagram-project"></i>
-                </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Network of International Partners
-                </h1>
-                <p class="text-center lg:text-left">
-                    At Marigold Abroad Training and Consultancy, we have a vast network of international partners that spans across various industries and countries. This network allows us to offer our clients unique opportunities and access to a wide range of resources and expertise. Through our strong partnerships, we can provide valuable connections, international internship placements, and collaborative projects that enhance the learning and career development of our clients. Our extensive network ensures that we stay at the forefront of global trends and opportunities, enabling us to deliver exceptional services and support to our clients.
-                </p>
-            </div>
-            
-            <div class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg2">
-                 <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                    <i class="fa-brands fa-cc-visa"></i>
-                        </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Visa Documentation (higher success rate)
-                </h1>
-                <p class="text-center lg:text-left">
-                    Trust our expertise in visa documentation to increase your chances of success. With a higher success rate, we ensure meticulous preparation and submission of your visa documents, guiding you through the process seamlessly.
-            </div>
-            <div class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg3">
-                 <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                    <i class="fa-solid fa-user"></i>
-                        </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Unique Profiling of Candidates
-                </h1>
-                <p class="text-center lg:text-left">
-                    We offer unique profiling of each candidate to tailor their visa or immigration application according to specific requirements. Our meticulous approach ensures a higher chance of success and smooth processing.
-                </p>
-            </div>
-            <div class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg1">
-                 <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                    <i class="fa-solid fa-gavel"></i>
-                        </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    In-House lawyer Support
-                </h1>
-                <p class="text-center lg:text-left">
-                    Our team of in-house lawyers is dedicated to supporting you with expert knowledge of immigration rules and regulations. They provide comprehensive guidance and assistance to ensure compliance and a smooth immigration process.
-                </p>
-            </div>
-            <div class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg2">
-                 <div class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl">
-                    <i class="fa-solid fa-life-ring"></i>
-                        </div>
-                <h1 class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue">
-                    Continuous Follow ups and Support
-                </h1>
-                <p class="text-center lg:text-left">
-                    We believe in providing continuous support to our clients throughout their journey. From pre-departure preparations to post-departure adjustments, our team ensures ongoing follow-ups and assistance to address any concerns and ensure a seamless experience.
-                </p>
-            </div>
-
-
+        <div
+          class="relative flex flex-col items-center col-span-2 gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg1"
+        >
+          <div
+            class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+          >
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Network of International Partners
+          </h1>
+          <p class="text-center lg:text-left">
+            At Marigold Abroad Training and Consultancy, we have a vast network
+            of international partners that spans across various industries and
+            countries. This network allows us to offer our clients unique
+            opportunities and access to a wide range of resources and expertise.
+            Through our strong partnerships, we can provide valuable
+            connections, international internship placements, and collaborative
+            projects that enhance the learning and career development of our
+            clients. Our extensive network ensures that we stay at the forefront
+            of global trends and opportunities, enabling us to deliver
+            exceptional services and support to our clients.
+          </p>
         </div>
+
+        <div
+          class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg2"
+        >
+          <div
+            class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+          >
+            <i class="fa-brands fa-cc-visa"></i>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Visa Documentation (higher success rate)
+          </h1>
+          <p class="text-center lg:text-left">
+            Trust our expertise in visa documentation to increase your chances
+            of success. With a higher success rate, we ensure meticulous
+            preparation and submission of your visa documents, guiding you
+            through the process seamlessly.
+          </p>
+        </div>
+
+        <div
+          class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg3"
+        >
+          <div
+            class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+          >
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Unique Profiling of Candidates
+          </h1>
+          <p class="text-center lg:text-left">
+            We offer unique profiling of each candidate to tailor their visa or
+            immigration application according to specific requirements. Our
+            meticulous approach ensures a higher chance of success and smooth
+            processing.
+          </p>
+        </div>
+        <div
+          class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg1"
+        >
+          <div
+            class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+          >
+            <i class="fa-solid fa-gavel"></i>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            In-House lawyer Support
+          </h1>
+          <p class="text-center lg:text-left">
+            Our team of in-house lawyers is dedicated to supporting you with
+            expert knowledge of immigration rules and regulations. They provide
+            comprehensive guidance and assistance to ensure compliance and a
+            smooth immigration process.
+          </p>
+        </div>
+        <div
+          class="relative flex flex-col items-center gap-4 p-12 mb-8 md:p-14 lg:p-16 lg:items-start lg:mb-0 rounded-3xl bg-bg2"
+        >
+          <div
+            class="absolute px-5 py-3 text-2xl text-white -top-6 bg-darkBlue rounded-2xl"
+          >
+            <i class="fa-solid fa-life-ring"></i>
+          </div>
+          <h1
+            class="text-2xl font-bold text-center lg:text-3xl lg:leading-tight lg:text-left text-verydarkBlue"
+          >
+            Continuous Follow ups and Support
+          </h1>
+          <p class="text-center lg:text-left">
+            We believe in providing continuous support to our clients throughout
+            their journey. From pre-departure preparations to post-departure
+            adjustments, our team ensures ongoing follow-ups and assistance to
+            address any concerns and ensure a seamless experience.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- Sister Organization -->
+    <section id="services" class="py-20 bg-blue">
+      <div
+        class="container items-center gap-10 pb-10 md:grid md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="flex flex-col items-center gap-4 mb-8 text-white md:mb-4 md:col-span-2 lg:col-span-3 lg:pl-10"
+        >
+          <h1
+            class="text-4xl font-bold text-center lg:text-5xl text-verydarkBlue"
+          >
+            Our Sister Organizations
+          </h1>
 
-       <!-- Footer -->
+          <p class="text-center text-balance lg:px-14">
+            Marigold Abroad is proud to be a member of a network of leading
+            organizations that share our commitment to international education
+            and career development. We collaborate with these organizations to
+            provide our clients with access to a wide range of resources and
+            opportunities.
+          </p>
+        </div>
+
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/restro.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Third Eye Restaurant & Bar
+            </h1>
+            <p class="">Indian & Continental Cuisine</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/ThirdEyeRestaurant"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a
+                href="https://thirdeye.com.np/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-red-700 hover:text-white"
+              >
+                <i class="fa-brands fa-chrome"></i> Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/bakery.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Third Eye Bakery Pvt. Ltd
+            </h1>
+            <p class="">Quality Breads & Cakes</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/thirdeyebakery"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a
+                href="https://www.instagram.com/thirdeye.bakery/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-orange-500 hover:text-white"
+              >
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/yingyang.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Ying Yang Restaurant & Bar
+            </h1>
+            <p class="">Thai & Continental Cuisine</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/yinyangrestro/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a
+                href="https://www.yinyang.com.np/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-red-700 hover:text-white"
+              >
+                <i class="fa-brands fa-chrome"></i> Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/cafe.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Cafe Tree Netra
+            </h1>
+            <p class="">Mix Cuisine</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=100054497498212"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/need.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Need Employment Services
+            </h1>
+            <p class="">Recruitment Agency</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090404221677"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a
+                href="https://ultimatesolutionnepal.com/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-red-700 hover:text-white"
+              >
+                <i class="fa-brands fa-chrome"></i> Website
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="p-1 mb-8 border-2 shadow-xl lg:mb-0 rounded-[18px] border-bg2"
+        >
+          <div
+            class="relative flex flex-col items-center gap-4 p-8 text-center shadow-xl lg:mb-0 rounded-2xl bg-bg2"
+          >
+            <img src="/img/sister/college.png" class="mx-auto mb-3 max-h-16" />
+            <h1
+              class="text-xl font-bold lg:text-2xl lg:leading-tight text-verydarkBlue"
+            >
+              Rehdon College
+            </h1>
+            <p class="">Science & Management</p>
+            <div class="flex gap-6">
+              <a
+                href="https://www.facebook.com/REHDONSCHOOLCOLLEGE"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-blue hover:text-white"
+              >
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+              <a
+                href="https://rehdon.edu.np/"
+                class="px-4 py-2 text-sm transition rounded-md bg-yellow hover:bg-red-700 hover:text-white"
+              >
+                <i class="fa-brands fa-chrome"></i> Website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
 
     <footer id="footer">
-        <div class="py-12 bg-lightYellow">
+      <div class="py-12 bg-lightYellow">
         <div class="container flex flex-col lg:grid lg:grid-cols-7 gap-14">
-            <div class="flex flex-col items-start gap-4 lg:col-span-2">
-                <img src="img/logo.png" class="h-16">
-                <p class="wrap-balance">
-                    Expanding your access to international career pathways with Marigold Abroad Training and Consultancy.
-                </p>
-                <a href="https://www.facebook.com/bkt.marigoldnp" class="text-3xl text-darkBlue" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
+          <div class="flex flex-col items-start gap-4 lg:col-span-2">
+            <img src="img/logo.png" class="h-16" />
+            <p class="wrap-balance">
+              Expanding your access to international career pathways with
+              Marigold Abroad Training and Consultancy.
+            </p>
+            <a
+              href="https://www.facebook.com/bkt.marigoldnp"
+              class="text-3xl text-darkBlue"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+          <div class="flex flex-col items-start gap-4">
+            <h1 class="text-xl font-bold">Site links</h1>
 
+            <ul class="flex flex-col justify-center">
+              <li class="flex items-center mx-3 my-2">
+                <a href="#top" class="nav-link-sm">Home</a>
+              </li>
+              <li class="flex items-center mx-3 my-2">
+                <a href="#program" class="nav-link-sm">Program</a>
+              </li>
+              <li class="flex items-center mx-3 my-2">
+                <a href="#about" class="nav-link-sm">About</a>
+              </li>
+              <li class="flex items-center mx-3 my-2">
+                <a href="#services" class="nav-link-sm">Services</a>
+              </li>
+              ]
+            </ul>
+          </div>
+
+          <div class="justify-center lg:col-span-2">
+            <div class="relative w-full h-64">
+              <iframe
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.340009562984!2d85.43654477536789!3d27.67588427620056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6589a7d24146a9b3%3A0xc8fc31fb7278f5dd!2sMarigold%20Abroad%20Training%20and%20Consultancy%20Bhaktapur!5e0!3m2!1sen!2snp!4v1698927156521!5m2!1sen!2snp"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              >
+              </iframe>
             </div>
-            <div class="flex flex-col items-start gap-4">
-                <h1 class="text-xl font-bold">
-                    Site links
-                </h1>
+          </div>
 
-                <ul class="flex flex-col justify-center">
-            
-                    <li class="flex items-center mx-3 my-2">
-                        <a href="#top" class="nav-link-sm">Home</a>
-                    </li>
-                    <li class="flex items-center mx-3 my-2">
-                        <a href="#program" class="nav-link-sm">Program</a>
-                    </li>
-                    <li class="flex items-center mx-3 my-2">
-                        <a href="#about" class="nav-link-sm">About</a>
-                    </li>
-                    <li class="flex items-center mx-3 my-2">
-                        <a href="#services" class="nav-link-sm">Services</a>
-                    </li>
-            </div>
+          <div
+            id="contact"
+            class="flex flex-col items-start gap-4 lg:col-span-2"
+          >
+            <h1 class="mb-4 text-xl font-bold">Contact us</h1>
 
-            <div class="justify-center lg:col-span-2">
-                <div class="relative w-full h-64">
-                    <iframe class="absolute top-0 left-0 w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.340009562984!2d85.43654477536789!3d27.67588427620056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6589a7d24146a9b3%3A0xc8fc31fb7278f5dd!2sMarigold%20Abroad%20Training%20and%20Consultancy%20Bhaktapur!5e0!3m2!1sen!2snp!4v1698927156521!5m2!1sen!2snp"
-                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
+            <ul class="flex flex-col flex-1 gap-8">
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-location-dot bg-iconYellow rounded-2xl"
+                  ></i>
                 </div>
-            </div>
+                <div>
+                  <h5 class="text-base font-semibold">Address</h5>
+                  <p class="text-sm">Kamalbinayak, Bhaktapur</p>
+                </div>
+              </li>
 
-            <div id="contact" class="flex flex-col items-start gap-4 lg:col-span-2">
-                <h1 class="mb-4 text-xl font-bold">
-                    Contact us
-                </h1>
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-envelope bg-lightBlue rounded-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold">email</h5>
+                  <a href="mailto:bkt.marigold@gmail.com">
+                    <p class="text-sm">bkt.marigold@gmail.com</p>
+                  </a>
+                </div>
+              </li>
 
-                <ul class="flex flex-col flex-1 gap-8">
-
-                    <li class="flex flex-row items-center gap-4">
-                        <div id="icon" class="">
-                            <i class="p-3 text-2xl fa-solid fa-location-dot bg-iconYellow rounded-2xl"></i>
-                        </div>
-                        <div>
-                                <h5 class="text-base font-semibold ">Address</h5>
-                                <p class="text-sm">Kamalbinayak, Bhaktapur</p>
-                        </div>
-                    </li>
-    
-                    <li class="flex flex-row items-center gap-4">
-                        <div id="icon" class="">
-                            <i class="p-3 text-2xl fa-solid fa-envelope bg-lightBlue rounded-2xl"></i>
-                        </div>
-                        <div>
-                                <h5 class="text-base font-semibold ">email</h5>
-                                <a href="mailto:bkt.marigold@gmail.com">
-                                    <p class="text-sm">bkt.marigold@gmail.com</p>
-                                </a>
-                        </div>
-                    </li>
-    
-                    <li class="flex flex-row items-center gap-4">
-                        <div id="icon" class="">
-                            <i class="p-3 text-2xl fa-solid fa-phone bg-pink rounded-2xl"></i>
-                        </div>
-                        <div>
-                                <h5 class="text-base font-semibold ">Phone</h5>
-                                <a href="tel:+9779869253061">
-                                    <p class="text-sm">+977 9869253061</p>
-                                </a>
-                        </div>
-                    </li>
-    
-                </ul>     
-
-            </div>
+              <li class="flex flex-row items-center gap-4">
+                <div id="icon" class="">
+                  <i
+                    class="p-3 text-2xl fa-solid fa-phone bg-pink rounded-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h5 class="text-base font-semibold">Phone</h5>
+                  <a href="tel:+9779869253061">
+                    <p class="text-sm">+977 9869253061</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
+      </div>
 
-        <div class="justify-center p-10 text-center text-white wrap-balance bg-VerydarkBlue">
-            &copy; Copyright <strong><span>Marigold Abroad Training and Consultancy</span></strong> 
-            <script>document.write(new Date().getFullYear())</script>
-            . All Rights Reserved
-        </div>
+      <div
+        class="justify-center p-10 text-center text-white wrap-balance bg-VerydarkBlue"
+      >
+        &copy; Copyright
+        <strong><span>Marigold Abroad Training and Consultancy</span></strong>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        . All Rights Reserved
+      </div>
     </footer>
 
-
-
-    <script src="js/script.js"></script
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
