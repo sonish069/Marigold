@@ -720,25 +720,10 @@ video {
   height: 100%;
 }
 
-.max-h-8 {
-  max-height: 2rem;
-}
-
-.max-h-20 {
-  max-height: 5rem;
-}
-
-.max-h-12 {
-  max-height: 3rem;
-}
-
 .max-h-16 {
   max-height: 4rem;
 }
 
-.max-h-24 {
-  max-height: 6rem;
-}
 
 .w-4 {
   width: 1rem;
@@ -873,10 +858,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-\[17px\] {
-  border-radius: 17px;
-}
-
 .rounded-\[18px\] {
   border-radius: 18px;
 }
@@ -893,9 +874,6 @@ video {
   border-width: 2px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
 
 .border-lightBlue {
   --tw-border-opacity: 1;
@@ -957,6 +935,7 @@ video {
   background-color: rgb(254 205 211 / var(--tw-bg-opacity));
 }
 
+
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(248 208 117 / var(--tw-bg-opacity));
@@ -1006,24 +985,7 @@ video {
   padding: 1.25rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-10 {
@@ -1064,16 +1026,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-60 {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
-.px-60 {
-  padding-left: 15rem;
-  padding-right: 15rem;
 }
 
 .px-4 {
@@ -1214,11 +1166,11 @@ video {
   transition-duration: 150ms;
 }
 
-.font-bold {
-  text-wrap: balance;
-}
-
-.text-balance {
+  .text-balance {
+    text-wrap:balance;
+  }
+  
+ .font-bold{
   text-wrap: balance;
 }
 
@@ -1343,24 +1295,10 @@ p {
   flex-shrink: 0;
 }
 
-.hover\:bg-darkBlue:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(73 71 159 / var(--tw-bg-opacity));
-}
 
 .hover\:bg-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(98 96 181 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-red-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-orange-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-orange-500:hover {
@@ -1368,9 +1306,6 @@ p {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
-.hover\:text-darkYellow:hover {
-  --tw-text-opacity: 1;
-  color: rgb(244 195 80 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1577,15 +1512,6 @@ p {
     padding-right: 10rem;
   }
 
-  .lg\:px-60 {
-    padding-left: 15rem;
-    padding-right: 15rem;
-  }
-
-  .lg\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
 
   .lg\:px-14 {
     padding-left: 3.5rem;
